@@ -398,7 +398,7 @@
         [_tzImagePickerVc showProgressHUD];
         UIImage *cropedImage = [TZImageCropManager cropImageView:cell.previewView.imageView toRect:_tzImagePickerVc.cropRect zoomScale:cell.previewView.scrollView.zoomScale containerView:self.view];
         if (_tzImagePickerVc.needCircleCrop) {
-            cropedImage = [TZImageCropManager circularClipImage:cropedImage];
+            // cropedImage = [TZImageCropManager circularClipImage:cropedImage];
         }
         _doneButton.enabled = YES;
         [_tzImagePickerVc hideProgressHUD];
